@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    
+    
+
+    <!-- Include the Bootstrap CSS file from the Bootstrap website -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Image to PDF Converter</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <img src="images/pdfLogo.jpg" alt="Logo" />
+      <img
+        width="214"
+        height="88"
+        src="https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo-214x88.png"
+        class="custom-logo"
+        alt=""
+        decoding="async"
+        srcset="
+          https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo-214x88.png  214w,
+          https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo-300x123.png 300w,
+          https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo-768x316.png 768w,
+          https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo-24x10.png    24w,
+          https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo-36x15.png    36w,
+          https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo-48x20.png    48w,
+          https://curiousdevelopers.in/wp-content/uploads/2022/03/cropped-86203043_padded_logo.png         812w
+        "
+        sizes="(max-width: 214px) 100vw, 214px"
+        title="cropped-86203043_padded_logo.png – Curious Developers"
+      />
+      <div>
+        <h1><strong>JPEG to PDF Converter</strong>
+          </h1>
+      </div>
+      <select >
+        <option>Home</option>
+        <option>About</option>
+        <option>Contact</option>
+      </select>
+      
+    </nav>
+    <div class="desc">
+      <img src="images/main-image.svg" alt="">
+      <div class="instructions">
+        <h2>Instructions to Follow</h2>
+        <ul>
+          <li>Click on the UploadImages</li>
+          <li>Upload JPEG Images</li>
+          <li>Click on the delete button if you want to delete images</li>
+          <li>Add More Images by clicking on UploadImages</li>
+          <li>Click Convert to PDF Button to get the PDF</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!--Main body-->
+    <div class="main-body">
+      
+      <div class="input-files">
+        <input type="file" id="myFile" accept="image/*" multiple style="display: none;" />
+       <label for="myFile" class="custom-file-upload"><h5 style="font-family: 'Bree Serif', serif;"><strong>UploadImages</strong>
+        </h5></label>
+      </div>
+      <div class="convert-section">
+        <button type="button" class="btn" style="font-family: 'Bree Serif', serif; background-color:  rgb(45, 4, 49); color: white;">Convert to PDF</button>
+      </div>
+    </div>
+
+    <!--Show selected images-->
+    <div class="selected-images">
+      
+    </div>
+    
+    <footer class="bg-light text-center text-lg-start" style="margin-top: 100px;">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color:  rgb(45, 4, 49); color: white;">
+        © 2022 Copyright:
+        <b>Debosmita</b>
+      </div>
+      
+    </footer>
+    
+
+    <!--JS-->
+    
+    <script src="index.js"></script>
+  </body>
+</html>
